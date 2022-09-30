@@ -1,3 +1,223 @@
-.get-new{
-  display: none;
+/******************************************
+/* CSS
+/*******************************************/
+
+*{
+  font-family: "inter",sans-serif,Arial;
+  
 }
+
+html{
+  font-size: 62.5%;
+}
+
+header{
+  
+display: flex;
+flex-direction: column;
+justify-content:space-around ;
+align-items: center;
+align-content: space-around;
+background: #F55C4A;
+height: 40rem;
+width: auto;
+
+
+}
+
+
+
+header>h1{
+  font-family: "Righteous",sans-serif;
+  font-weight: 400;
+  font-size: 4.8rem;
+  
+  height:6rem;
+ 
+  position: relative;
+  bottom:7%;
+
+
+}
+
+header>h2{
+  font-family: "inter",sans-serif;
+  font-size: 1.6rem;
+  font-weight: 300;
+  width:27rem;
+  height:5rem;
+  line-height: 2.4rem;
+  position: relative;
+  bottom:23%;
+  
+  
+}
+
+input[type="text"], textarea {
+    
+   
+   
+    border: none;
+    border-bottom: 2px solid black; 
+    width: 20.5rem;
+    height: 2.2rem;
+    outline:none;
+    margin-left: 12rem;
+   
+    position: relative;
+    background-color: #F55C4A;
+    
+}
+
+input::placeholder{
+  color: black;
+}
+
+input:focus::placeholder{
+  color: transparent;
+  transition: 0.5s;
+}
+
+
+header>label{
+  font-family: "inter",sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  padding-right: 12rem;
+  height: .1rem;
+  position: relative;
+  bottom:28%;
+  
+}
+
+header>label+label{
+  font-family: "inter",sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  padding-right: 12rem;
+  height: .1rem;
+  position: relative;
+  bottom:25%;
+  
+  
+}
+
+
+
+button{
+  height: 4.7rem;
+  width: 20.5rem;
+  border:0.2rem solid black;
+  background-color: white;
+  font-family: "inter",sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  box-shadow: -0.6rem 1rem black;
+  position: relative;
+  bottom:12%;
+
+}
+
+
+
+button:hover{
+  background-color:black;
+  color: white;
+  border:solid 0.2rem white;
+  transition: 0.4s;
+  
+}
+
+
+
+section{
+  display: flex;
+  align-items: baseline;
+  height: 50rem;
+  flex-wrap: wrap;
+
+}
+
+section>h2{
+  font-family: "righteous",sans-serif;
+  font-weight: 400;
+  font-size:7.5rem;
+  
+  
+  
+}
+
+section>span{
+  color:#F3A140 ;
+  font-family: "righteous",sans-serif;
+  font-size:2rem;
+  
+  
+  width: 7rem;
+  height: 5rem;
+  text-align: center;
+  line-height: 7rem;
+  position: relative;
+  
+  
+}
+
+section>h3{
+  font-family: "righteous",sans-serif;
+  font-weight: 400;
+  font-size:7.5rem;
+  
+  flex-basis: 100%;
+  position: relative;
+  bottom:14rem;
+}
+
+
+
+footer{
+  display: flex;
+  flex-grow: 1;
+  height: 4rem;
+  width: auto;
+  align-items: center;
+  background-color: #1C2628;
+  justify-content: space-between;
+}
+
+p{
+  color: white;  
+  
+  font-family: "inter",sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+
+a{
+  font-family: "inter",sans-serif;
+  font-size:1.6rem;
+  font-weight: 600;
+  color: white;
+  
+  text-decoration: none;
+  margin-right: 10rem;
+}
+
+a:hover{
+  color: #F3A140;
+}
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
