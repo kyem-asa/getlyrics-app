@@ -7,11 +7,24 @@
   
 }
 
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
 html{
   font-size: 62.5%;
 }
 
-header{
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+header>div{
   
 display: flex;
 flex-direction: column;
@@ -19,7 +32,7 @@ justify-content:space-around ;
 align-items: center;
 align-content: space-around;
 background: #F55C4A;
-height: 40rem;
+height: 50rem;
 width: auto;
 
 
@@ -27,20 +40,17 @@ width: auto;
 
 
 
-header>h1{
+div>h1{
   font-family: "Righteous",sans-serif;
   font-weight: 400;
   font-size: 4.8rem;
-  
   height:6rem;
- 
   position: relative;
   bottom:7%;
-
-
+  
 }
 
-header>h2{
+.hero-text{
   font-family: "inter",sans-serif;
   font-size: 1.6rem;
   font-weight: 300;
@@ -49,21 +59,18 @@ header>h2{
   line-height: 2.4rem;
   position: relative;
   bottom:23%;
-  
+  color: black;
   
 }
 
 input[type="text"], textarea {
     
-   
-   
     border: none;
     border-bottom: 2px solid black; 
     width: 20.5rem;
     height: 2.2rem;
     outline:none;
     margin-left: 12rem;
-   
     position: relative;
     background-color: #F55C4A;
     
@@ -79,7 +86,7 @@ input:focus::placeholder{
 }
 
 
-header>label{
+div>label{
   font-family: "inter",sans-serif;
   font-weight: 400;
   font-size: 1.6rem;
@@ -88,9 +95,10 @@ header>label{
   position: relative;
   bottom:28%;
   
+  
 }
 
-header>label+label{
+div>label+label{
   font-family: "inter",sans-serif;
   font-weight: 400;
   font-size: 1.6rem;
@@ -100,11 +108,12 @@ header>label+label{
   bottom:25%;
   
   
+  
 }
 
 
 
-button{
+.get-lyrics{
   height: 4.7rem;
   width: 20.5rem;
   border:0.2rem solid black;
@@ -115,8 +124,24 @@ button{
   box-shadow: -0.6rem 1rem black;
   position: relative;
   bottom:12%;
+  
 
 }
+
+/* .get-new{
+  height: 4.7rem;
+  width: 20.5rem;
+  border:0.2rem solid black;
+  background-color: white;
+  font-family: "inter",sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  box-shadow: -0.6rem 1rem black;
+  position: relative;
+  bottom:7%;
+  
+  
+} */
 
 
 
@@ -127,6 +152,7 @@ button:hover{
   transition: 0.4s;
   
 }
+
 
 
 
@@ -173,22 +199,38 @@ section>h3{
 }
 
 
+section>p{
+  border:2px solid black;
+  
+  width: 30rem;
+  
+  
+}
 
 footer{
+  /* position: static; */
+  margin-top: auto;
   display: flex;
-  flex-grow: 1;
-  height: 4rem;
+  /* flex-grow: 1; */
+  /* height: 4rem; */
   width: auto;
   align-items: center;
   background-color: #1C2628;
   justify-content: space-between;
+  flex: 4rem;
+ 
 }
 
-p{
+main{
+  height: auto;
+}
+
+footer>p{
+  
   color: white;  
   
   font-family: "inter",sans-serif;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 300;
 }
 
@@ -205,6 +247,14 @@ a{
 
 a:hover{
   color: #F3A140;
+}
+
+.lyrics-body{
+  position: inherit;
+ font-size: 3rem;
+  width:15rem;
+ overflow-wrap: break-word;
+ display: block;
 }
 
 /* Box Model Hack */

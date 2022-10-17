@@ -70,3 +70,15 @@ document.querySelector('.get-new').addEventListener('click',()=>{
     document.querySelectorAll('input').forEach(x=>x.value='')
 
 })
+
+//this will unhide the "get new lyrics button, on-click, covering the "get lyrics button"
+document.querySelector('.get-lyrics').addEventListener('click',hide)
+    
+    function hide(){
+        document.querySelectorAll('.hide').forEach(e => e.style.display='none')
+        document.querySelector('.shrink').style.height='15rem'
+        document.querySelector('.grow').style.height='75rem'
+        
+        
+
+    }
